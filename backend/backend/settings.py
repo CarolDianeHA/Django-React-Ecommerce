@@ -138,13 +138,22 @@ JAZZMIN_SETTINGS = {
     'site_title': 'Django Admin',
     'site_header': 'Django Admin',
     'site_brand': 'Welcome to HA Store',
+    'welcome_sign': 'Welcome to HA Store',
+    'copyright': 'HA Technologies',
     'site_logo': 'backend/logo.png',
+    'site_favicon': 'backend/favicon.ico',
+    'show_ui_builder': True, # Set to True to enable UI builder (UI configuration)
 }
 
 JAZZMIN_UI_TWEAKS = {
-    'theme': 'default',
-    'title_h1': False,
-    'title_h2': False,
-    'related_modal_active': True,
-    'navigation_expanded': True,
+    "accent": "accent-primary",
+    "navbar": "navbar-dark",
+    "navbar_fixed": True,
+    "footer_fixed": True,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-primary",
+    "theme": "darkly",
+    "dark_mode_theme": "solar",
+    "sidebar_nav_legacy_style": True,
+    "body_small_text": True,
 }
