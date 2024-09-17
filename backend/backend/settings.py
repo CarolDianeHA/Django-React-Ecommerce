@@ -131,6 +131,8 @@ STATIC_ROOT = BASE_DIR / 'staticfiles' # Adding static files root directory
 MEDIA_URL = '/media/' # Adding media URL
 MEDIA_ROOT = BASE_DIR / 'media' # Adding media root directory
 
+AUTH_USER_MODEL = 'userauths.User' # Custom user model
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
