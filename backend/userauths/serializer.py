@@ -40,10 +40,10 @@ class RegisterSerializer(serializers.ModelSerializer):
             phone=validated_data['phone'],
         )
 
-        email_user = user.email.split('@')
-        user.set_password(validate_password['password'])
-
-        user.set_password(validate_password['password'])
+        email_user, mobile = user.email.split('@')
+        user.username = email_user
+        user.set_password(validated_data['password'])
+        user.save()
 
         return user
 
