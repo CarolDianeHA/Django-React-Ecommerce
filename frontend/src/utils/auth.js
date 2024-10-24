@@ -56,8 +56,8 @@ export const logout = () => {
 }
 
 export const setUser = async () => {
-    const accessToken = Cookie.get('access_token')
-    const refreshToken = Cookie.get('refresh_token')
+    const accessToken = Cookies.get('access_token')
+    const refreshToken = Cookies.get('refresh_token')
 
     if(!accessToken || !refreshToken) {
         return;
